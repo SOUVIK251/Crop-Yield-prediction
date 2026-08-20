@@ -4,11 +4,12 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, r2_score
 import re
+import os
 import warnings
 warnings.filterwarnings("ignore")
 
 # 1. Setup and Data Loading
-INPUT_FILE = "State-wise Yield of Food Grains in Kharif and Rabi seasons (4).csv"
+INPUT_FILE = "data/State-wise Yield of Food Grains in Kharif and Rabi seasons (4).csv" if os.path.exists("data/State-wise Yield of Food Grains in Kharif and Rabi seasons (4).csv") else "State-wise Yield of Food Grains in Kharif and Rabi seasons (4).csv"
 OUTPUT_FILE = "wb_yield_multiyear_recursive.csv"
 
 def run_prediction():
