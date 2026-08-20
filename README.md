@@ -140,7 +140,7 @@ The prediction method used for each group is recorded in the output.
 ## Prediction Output
 
 The final prediction results are saved as:
-`wb_yield_multiyear_recursive.csv`
+`wb_predicted_yield_2026-2027.csv`
 
 The output includes:
 - Crop Name
@@ -171,7 +171,7 @@ West-Bengal-Crop-Yield-Prediction/
 │   └── visualization.py
 │
 ├── results/
-│   ├── wb_yield_multiyear_recursive.csv
+│   ├── wb_predicted_yield_2026-2027.csv
 │   └── prediction_graph.png
 │
 ├── report/
@@ -217,7 +217,7 @@ pip install -r requirements.txt
 
 5. **Check the results**
    The prediction file will be generated as:
-   `wb_yield_multiyear_recursive.csv`
+   `wb_predicted_yield_2026-2027.csv`
 
 ## Important Results
 
