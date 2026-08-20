@@ -10,7 +10,9 @@ warnings.filterwarnings("ignore")
 
 # 1. Setup and Data Loading
 INPUT_FILE = "data/State-wise Yield of Food Grains in Kharif and Rabi seasons (4).csv" if os.path.exists("data/State-wise Yield of Food Grains in Kharif and Rabi seasons (4).csv") else "State-wise Yield of Food Grains in Kharif and Rabi seasons (4).csv"
-OUTPUT_FILE = "wb_yield_multiyear_recursive.csv"
+OUTPUT_DIR = "results"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+OUTPUT_FILE = os.path.join(OUTPUT_DIR, "wb_yield_multiyear_recursive.csv")
 
 def run_prediction():
     try:
